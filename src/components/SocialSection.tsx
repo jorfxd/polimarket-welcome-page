@@ -1,21 +1,21 @@
-import { Facebook, Instagram, Twitter, Youtube, Mail, Phone, MapPin } from "lucide-react";
+import { Facebook, Instagram, Mail, Phone, MapPin, MessageCircle } from "lucide-react";
 
 const socialLinks = [
-  { icon: Facebook, href: "#", label: "Facebook", color: "hover:text-blue-500" },
-  { icon: Instagram, href: "#", label: "Instagram", color: "hover:text-pink-500" },
-  { icon: Twitter, href: "#", label: "Twitter", color: "hover:text-sky-500" },
-  { icon: Youtube, href: "#", label: "Youtube", color: "hover:text-red-500" },
+  { icon: Facebook, href: "https://www.facebook.com/FERNANFL00", label: "Facebook", color: "hover:text-blue-500" },
+  { icon: Instagram, href: "https://www.instagram.com/jorfblogsito/", label: "Instagram", color: "hover:text-pink-500" },
+  { icon: MessageCircle, href: "https://chat.whatsapp.com/TU-GRUPO-AQUI", label: "WhatsApp", color: "hover:text-green-500" },
+ 
 ];
 
 const contactInfo = [
-  { icon: Mail, text: "contacto@polimarket.com", label: "Email" },
-  { icon: Phone, text: "+52 (55) 1234-5678", label: "Teléfono" },
-  { icon: MapPin, text: "Ciudad de México, México", label: "Ubicación" },
+  { icon: Mail, text: "jaarroba@espol.edu.ec", label: "Email-Espol" },
+  { icon: Phone, text: "+593 968349750", label: "Teléfono" },
+  { icon: MapPin, text: "Guayaquil-Ecuador", label: "Ubicación" },
 ];
 
 const SocialSection = () => {
   return (
-    <section className="bg-secondary py-20">
+    <section id="redes" className="bg-secondary py-20">
       <div className="container mx-auto px-6 lg:px-12">
         <div className="grid gap-12 md:grid-cols-2">
           {/* Social Media */}
@@ -39,6 +39,23 @@ const SocialSection = () => {
                 </a>
               ))}
             </div>
+
+            {/* WhatsApp Banner */}
+            <div className="mt-10 rounded-xl bg-green-600 p-6 text-center text-white shadow-card">
+              <h3 className="text-2xl font-bold">Únete a nuestro WhatsApp</h3>
+              <p className="mt-2 text-white/90">
+                Entra a nuestro grupo oficial y recibe novedades exclusivas.
+              </p>
+
+              <a
+                href="https://chat.whatsapp.com/TU-GRUPO-AQUI" 
+                target="_blank"
+                className="mt-4 inline-block rounded-xl bg-white px-6 py-3 font-semibold text-green-700 shadow hover:bg-gray-100"
+              >
+                Únete al Grupo
+              </a>
+            </div>
+
           </div>
 
           {/* Contact Info */}

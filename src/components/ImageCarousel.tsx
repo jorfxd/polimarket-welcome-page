@@ -1,15 +1,13 @@
-import carousel1 from "@/assets/carousel-1.jpg";
-import carousel2 from "@/assets/carousel-2.jpg";
-import carousel3 from "@/assets/carousel-3.jpg";
-import carousel4 from "@/assets/carousel-4.jpg";
-import carousel5 from "@/assets/carousel-5.jpg";
+import carousel1 from "@/assets/comida.jpg";
+import carousel2 from "@/assets/productos.jpg";
+import carousel3 from "@/assets/servicios.jpg";
+
 
 const images = [
-  { src: carousel1, alt: "Productos frescos" },
-  { src: carousel2, alt: "Electrónica" },
-  { src: carousel3, alt: "Moda" },
-  { src: carousel4, alt: "Hogar" },
-  { src: carousel5, alt: "Deportes" },
+  { src: carousel1, alt: "Productos" },
+  { src: carousel2, alt: "Servicios" },
+  { src: carousel3, alt: "Alimentos" },
+
 ];
 
 const ImageCarousel = () => {
@@ -17,7 +15,7 @@ const ImageCarousel = () => {
   const duplicatedImages = [...images, ...images];
 
   return (
-    <section className="w-full overflow-hidden py-16 bg-muted/50">
+    <section id= "info" className="w-full overflow-hidden py-16 bg-muted/50">
       <div className="mb-8 text-center">
         <h2 className="text-3xl font-bold font-display text-foreground md:text-4xl">
           Descubre nuestras categorías

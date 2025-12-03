@@ -1,6 +1,7 @@
 import { Menu, X, ShoppingCart } from "lucide-react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
+import polilogo from "@/assets/polito.jpg";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,36 +16,37 @@ const Navbar = () => {
               <span className="font-display text-lg font-bold text-primary-foreground">P</span>
             </div>
             <span className="font-display text-xl font-bold text-foreground">
-              Polimarket
+              olimarket
             </span>
+            {/* Logo */}
+          <a href="/" className="flex items-center gap-2">
+
+            <img
+              src={polilogo}
+              alt="Logo"
+              className="h-9 w-9 rounded-xl object-cover"
+            />
+
           </a>
+          </a>
+          
+
 
           {/* Desktop Nav */}
           <div className="hidden items-center gap-8 md:flex">
-            <a href="#" className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground">
+            <a href="#inicio" className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground">
               Inicio
             </a>
-            <a href="#" className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground">
-              Categorías
+            <a href="#info" className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground">
+              Informacion
             </a>
-            <a href="#" className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground">
-              Ofertas
-            </a>
-            <a href="#" className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground">
+            <a href="#redes" className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground">
               Contacto
             </a>
           </div>
 
           {/* Actions */}
-          <div className="hidden items-center gap-4 md:flex">
-            <Button variant="ghost" size="icon" className="relative">
-              <ShoppingCart className="h-5 w-5" />
-              <span className="absolute -right-1 -top-1 flex h-5 w-5 items-center justify-center rounded-full bg-primary text-xs font-medium text-primary-foreground">
-                0
-              </span>
-            </Button>
-            <Button>Iniciar sesión</Button>
-          </div>
+          
 
           {/* Mobile Menu Button */}
           <button
@@ -60,19 +62,16 @@ const Navbar = () => {
         {isOpen && (
           <div className="border-t border-border pb-6 pt-4 md:hidden">
             <div className="flex flex-col gap-4">
-              <a href="#" className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground">
+              <a href="#inicio" className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground">
                 Inicio
               </a>
-              <a href="#" className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground">
-                Categorías
+              <a href="#info" className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground">
+                informacion
               </a>
-              <a href="#" className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground">
-                Ofertas
-              </a>
-              <a href="#" className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground">
+              <a href="#redes" className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground">
                 Contacto
               </a>
-              <Button className="mt-4 w-full">Iniciar sesión</Button>
+              
             </div>
           </div>
         )}

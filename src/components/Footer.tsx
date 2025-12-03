@@ -16,14 +16,9 @@ const Footer = () => {
               Términos y Condiciones
             </a>
             <a href="#" className="transition-colors hover:text-primary-foreground">
-              Política de Privacidad
-            </a>
-            <a href="#" className="transition-colors hover:text-primary-foreground">
               Cookies
             </a>
-            <a href="#" className="transition-colors hover:text-primary-foreground">
-              Aviso Legal
-            </a>
+            
           </nav>
         </div>
 
@@ -43,9 +38,7 @@ const Footer = () => {
         {/* Extra Small Text */}
         <div className="mt-4 text-center">
           <p className="text-[10px] text-primary-foreground/30">
-            Polimarket no se hace responsable por el contenido de terceros. Los precios y disponibilidad de productos pueden variar sin previo aviso. 
-            Las imágenes son meramente ilustrativas. Consulta nuestros términos de servicio para más información. 
-            Registro mercantil: ABC123456789
+            Polimarket no se hace responsable por el contenido de terceros. 
           </p>
         </div>
       </div>
