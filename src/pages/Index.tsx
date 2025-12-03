@@ -1,13 +1,35 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { Helmet } from "react-helmet-async";
+import Navbar from "@/components/Navbar";
+import HeroSection from "@/components/HeroSection";
+import ImageCarousel from "@/components/ImageCarousel";
+import SocialSection from "@/components/SocialSection";
+import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
+    <>
+      <Helmet>
+        <title>Polimarket - Tu Marketplace de Confianza</title>
+        <meta name="description" content="Polimarket es el marketplace donde encuentras todo lo que necesitas con los mejores precios y la mejor calidad. Explora nuestras categorías." />
+      </Helmet>
+
+      <div className="min-h-screen bg-background">
+        <Navbar />
+        
+        <main>
+          <HeroSection 
+            greeting="¡Bienvenido a Polimarket!"
+            subtitle="El marketplace donde encuentras todo lo que necesitas con los mejores precios y la mejor calidad. Descubre miles de productos de vendedores verificados."
+          />
+          
+          <ImageCarousel />
+          
+          <SocialSection />
+        </main>
+
+        <Footer />
       </div>
-    </div>
+    </>
   );
 };
 
