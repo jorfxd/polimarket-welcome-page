@@ -1,12 +1,14 @@
 import carousel1 from "@/assets/comida.jpg";
 import carousel2 from "@/assets/productos.jpg";
 import carousel3 from "@/assets/servicios.jpg";
+import carpas from "@/assets/carpas.jpg";
 
 
 const images = [
   { src: carousel1, alt: "Productos" },
   { src: carousel2, alt: "Servicios" },
   { src: carousel3, alt: "Alimentos" },
+  { src: carpas, alt: "Ferias" },
 
 ];
 

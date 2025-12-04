@@ -8,7 +8,7 @@ const socialLinks = [
 ];
 
 const contactInfo = [
-  { icon: Mail, text: "jaarroba@espol.edu.ec", label: "Email-Espol" },
+  { icon: Mail, text: "jaarroba@espol.edu.ec", label: "Correo-Espol" },
   { icon: Phone, text: "+593 968349750", label: "Teléfono" },
   { icon: MapPin, text: "Guayaquil-Ecuador", label: "Ubicación" },
 ];
@@ -40,21 +40,7 @@ const SocialSection = () => {
               ))}
             </div>
 
-            {/* WhatsApp Banner */}
-            <div className="mt-10 rounded-xl bg-green-600 p-6 text-center text-white shadow-card">
-              <h3 className="text-2xl font-bold">Únete a nuestro WhatsApp</h3>
-              <p className="mt-2 text-white/90">
-                Entra a nuestro grupo oficial y recibe novedades exclusivas.
-              </p>
-
-              <a
-                href="https://chat.whatsapp.com/TU-GRUPO-AQUI" 
-                target="_blank"
-                className="mt-4 inline-block rounded-xl bg-white px-6 py-3 font-semibold text-green-700 shadow hover:bg-gray-100"
-              >
-                Únete al Grupo
-              </a>
-            </div>
+            
 
           </div>
 
@@ -64,7 +50,7 @@ const SocialSection = () => {
               Información de contacto
             </h2>
             <p className="mt-4 text-muted-foreground">
-              Estamos aquí para ayudarte
+              ¡Estamos aquí para ayudarte!
             </p>
             
             <div className="mt-8 space-y-4">
@@ -86,15 +72,38 @@ const SocialSection = () => {
           </div>
         </div>
 
-        {/* Extra Info */}
-        <div className="mt-16 rounded-2xl bg-hero-gradient p-8 text-center shadow-lg md:p-12">
-          <h3 className="font-display text-2xl font-bold text-primary-foreground md:text-3xl">
-            ¿Tienes alguna pregunta?
-          </h3>
-          <p className="mx-auto mt-4 max-w-2xl text-primary-foreground/80">
-            Nuestro equipo está disponible las 24 horas del día, los 7 días de la semana para ayudarte con cualquier consulta que tengas.
-          </p>
+        <div className="mt-16 flex flex-col gap-8 md:flex-row">
+  
+          {/* Extra Info */}
+          <div className="flex-1 rounded-2xl bg-hero-gradient p-8 text-center shadow-lg md:p-12">
+            <h3 className="font-display text-2xl font-bold text-primary-foreground md:text-3xl">
+              ¿Tienes alguna pregunta?
+            </h3>
+            <p className="mx-auto mt-4 max-w-2xl text-primary-foreground/80">
+              Nuestro equipo está disponible las 24 horas del día, los 7 días de la semana para ayudarte con cualquier consulta que tengas.
+            </p>
+          </div>
+
+          {/* WhatsApp Banner */}
+          <div id="wasap" className="flex-1 rounded-xl bg-green-600 p-6 text-center text-white shadow-card">
+            <h3 className="text-2xl font-bold">Únete a nuestro WhatsApp</h3>
+            <p className="mt-2 text-white/90">
+              Entra a nuestro grupo oficial y recibe novedades exclusivas.
+            </p>
+
+            <a
+              href="https://chat.whatsapp.com/TU-GRUPO-AQUI"
+              target="_blank"
+              className="mt-4 inline-block rounded-xl bg-white px-6 py-3 font-semibold text-green-700 shadow hover:bg-gray-100"
+            >
+              Únete al Grupo
+            </a>
+          </div>
+
         </div>
+
+
+
       </div>
     </section>
   );
