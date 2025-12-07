@@ -4,7 +4,7 @@ import path from "path";
 import { componentTagger } from "lovable-tagger";
 
 export default defineConfig(({ mode }) => ({
-  base: "/polimarket-welcome-page/",  // <-- AGREGA ESTA LÍNEA (usa tu repo)
+  base: process.env.NODE_ENV === "production" ? "/polimarket-welcome-page/" : "/",
   server: {
     host: "::",
     port: 8080,
