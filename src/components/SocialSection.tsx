@@ -1,5 +1,5 @@
 import { Facebook, Instagram, Mail, Phone, MapPin, MessageCircle } from "lucide-react";
-import tiktokicon from "@/components/ui/tiktokicon";
+import tiktokicon from "@/components/tiktokicon";
 
 
 const socialLinks = [
