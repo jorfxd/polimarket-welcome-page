@@ -1,7 +1,9 @@
-import carousel1 from "@/assets/comida.jpg";
-import carousel2 from "@/assets/productos.jpg";
-import carousel3 from "@/assets/servicios.jpg";
+import carousel1 from "@/assets/frutanga.jpg";
+import carousel2 from "@/assets/comida.jpg";
+import carousel3 from "@/assets/pulseras.jpg";
 import carpas from "@/assets/carpas.jpg";
+import llaveros from "@/assets/llaveros.jpg";
+import logo from "@/assets/logoNombre.jpg";
 
 
 const images = [
@@ -9,6 +11,8 @@ const images = [
   { src: carousel2, alt: "Servicios" },
   { src: carousel3, alt: "Alimentos" },
   { src: carpas, alt: "Ferias" },
+  { src: llaveros, alt: "Productos" },
+  { src: logo, alt: "Polimarket" },
 
 ];
 

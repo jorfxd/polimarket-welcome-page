@@ -1,7 +1,7 @@
 import { Menu, X, ShoppingCart } from "lucide-react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import polilogo from "@/assets/polito.jpg";
+import polilogo from "@/assets/politofoto.jpg";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,22 +12,14 @@ const Navbar = () => {
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
           <a href="/" className="flex items-center gap-2">
-            <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-hero-gradient">
+            <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-blue-400">
               <span className="font-display text-lg font-bold text-primary-foreground">P</span>
             </div>
             <span className="font-display text-xl font-bold text-foreground">
               olimarket
             </span>
             {/* Logo */}
-          <a href="/" className="flex items-center gap-2">
-
-            <img
-              src={polilogo}
-              alt="Logo"
-              className="h-9 w-9 rounded-xl object-cover"
-            />
-
-          </a>
+          
           </a>
           
 

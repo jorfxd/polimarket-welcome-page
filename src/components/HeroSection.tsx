@@ -37,11 +37,20 @@ const HeroSection = ({
               {subtitle}
             </p>
             
+
             <a href="#wasap" className="animate-fade-up-delay-3 mt-8 flex flex-wrap gap-4">
-              <Button size="lg" className="group animate-pulse-glow">
-                Contactanos
-                <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
-              </Button>
+
+              <div className="animate-fade-up-delay-3 mt-8 flex flex-wrap gap-4">
+                
+
+                <Button size="lg" className="group animate-pulse-glow">
+                  Contactanos
+                  <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+                </Button>
+              
+
+            
+              </div>
             </a>
 
           </div>

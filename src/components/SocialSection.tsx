@@ -1,9 +1,11 @@
 import { Facebook, Instagram, Mail, Phone, MapPin, MessageCircle } from "lucide-react";
+import tiktokicon from "@/components/ui/tiktokicon";
+
 
 const socialLinks = [
-  { icon: Facebook, href: "https://www.facebook.com/FERNANFL00", label: "Facebook", color: "hover:text-blue-500" },
-  { icon: Instagram, href: "https://www.instagram.com/jorfblogsito/", label: "Instagram", color: "hover:text-pink-500" },
-  { icon: MessageCircle, href: "https://chat.whatsapp.com/TU-GRUPO-AQUI", label: "WhatsApp", color: "hover:text-green-500" },
+  { icon: tiktokicon, href: "https://www.tiktok.com/@polimarket05?_r=1&_t=ZS-920JmBmHmqb", label: "tiktok", color: "hover:text-blue-500" },
+  { icon: Instagram, href: "https://www.instagram.com/polimarket.ec?igsh=MXYxZnc5ZTluZnhtOQ==", label: "Instagram", color: "hover:text-pink-500" },
+  { icon: MessageCircle, href: "https://chat.whatsapp.com/J7OYlWSrH3nHXkLEweqelz?mode=hqrt1", label: "WhatsApp", color: "hover:text-green-500" },
  
 ];
 
@@ -33,14 +35,16 @@ const SocialSection = () => {
                   key={social.label}
                   href={social.href}
                   aria-label={social.label}
-                  className={`group flex h-14 w-14 items-center justify-center rounded-2xl bg-card shadow-card transition-all duration-300 hover:-translate-y-1 hover:shadow-lg ${social.color}`}
+                  className={`group flex h-16 w-16 items-center justify-center rounded-2xl bg-card shadow-card transition-all duration-300 hover:-translate-y-1 hover:shadow-lg ${social.color}`}
                 >
-                  <social.icon className="h-6 w-6 text-muted-foreground transition-colors group-hover:scale-110" />
+                  <social.icon className="h-8 w-8 text-muted-foreground transition-colors group-hover:scale-110" />
                 </a>
               ))}
             </div>
 
+
             
+
 
           </div>
 
@@ -92,7 +96,7 @@ const SocialSection = () => {
             </p>
 
             <a
-              href="https://chat.whatsapp.com/TU-GRUPO-AQUI"
+              href="https://chat.whatsapp.com/J7OYlWSrH3nHXkLEweqelz?mode=hqrt1"
               target="_blank"
               className="mt-4 inline-block rounded-xl bg-white px-6 py-3 font-semibold text-green-700 shadow hover:bg-gray-100"
             >
